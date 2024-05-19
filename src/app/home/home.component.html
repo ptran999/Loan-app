@@ -1,0 +1,49 @@
+<!--
+    Title: home.component.html
+    Author: Phuong Tran
+    Date: 05/05/2024
+    Description: Loan App - Capstone Project.
+-->
+
+<div fxLayout="row" fxLayoutGap="5%">
+  <!-- The form elements to take in user data for processing -->
+  <form fxLayout="column" style="width: 50%;" (ngSubmit)="calculate()">
+    <mat-form-field fxFlex appearance="fill">
+      <mat-label>Loan Amount</mat-label>
+      <!-- loan input -->
+      <input type="number" name="loanAmount" matInput [(ngModel)]="principle">
+    </mat-form-field>
+    <mat-form-field fxFlex appearance="fill">
+      <mat-label>Interest</mat-label>
+      <!-- interest input -->
+      <input type="number" name="interest" matInput [(ngModel)]="interestRate">
+    </mat-form-field>
+    <mat-form-field fxFlex appearance="fill">
+      <mat-label>Years</mat-label>
+      <!-- years input -->
+      <input type="number" name="years" matInput [(ngModel)]="loanTerm">
+    </mat-form-field>
+    <div style="width: 100%" fxLayoutAlign="end start">
+      <!-- initiate the loan calculations -->
+      <mat-card-actions>
+        <button type="submit" fxFlex mat-raised-button color="primary">
+          Calculate
+        </button>
+      </mat-card-actions>
+    </div>
+  </form>
+
+  <!-- the display for the calculation outputs -->
+  <div fxLayout="column" id="calculations">
+    <div>
+      <h2>Monthly Payment</h2>
+      <p>${{ monthlyPayment }}</p>
+    </div>
+    <br>
+    <div style="text-align: center;">
+      <h2>Interest</h2>
+      <p>${{ totalInterest }}</p>
+    </div>
+  </div>
+</div>
+

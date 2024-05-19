@@ -1,0 +1,26 @@
+/*
+    Title: home.component.css
+    Author: Phuong Tran
+    Date: 05/05/2024
+    Description: Loan App - Capstone Project.
+*/
+
+#calculations {
+  text-align: center;
+  width: 40%;
+  color: #505d87;
+  padding: 50px;
+}
+
+#calculations h2 {
+  font-size: 25px;
+}
+
+#calculations p {
+  font-size: 30px;
+  font-weight: 100;
+  text-indent: 50px;
+  letter-spacing: 3px;
+  line-height: 1.6;
+  letter-spacing: 3px;
+}

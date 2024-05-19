@@ -1,0 +1,29 @@
+/*
+    Title: app.component.css
+    Author: Phuong Tran
+    Date: 05/05/2024
+    Description: Loan App - Capstone Project.
+*/
+
+
+/* styling for the main container */
+.main-container {
+  margin-top: 200px;
+  margin-left: 20%;
+  margin-right: auto;
+  padding-top: 50px;
+  width: 60%;
+
+}
+
+#nav {
+  color: #fff !important;
+}
+
+mat-toolbar {
+  background-color: 	#5d5d5d !important;
+}
+
+.yellow {
+  color: #ecb939;
+}
